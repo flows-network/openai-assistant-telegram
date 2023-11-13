@@ -1,0 +1,19 @@
+[package]
+name = "tg-chat"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+async-openai-wasi = "0"
+tg-flows = "0.3"
+serde_json = "1.0.95"
+tokio_wasi = { version = "1.25.1", features = ["macros", "rt"] }
+flowsnet-platform-sdk = "0.1"
+log = "0.4"
+store-flows = "0.3.1"
+
