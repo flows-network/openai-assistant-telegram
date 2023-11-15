@@ -1,4 +1,4 @@
-use async_openai_wasi::{
+use async_openai::{
     types::{
         CreateMessageRequestArgs, CreateRunRequestArgs, CreateThreadRequestArgs, MessageContent,
         RunStatus,
